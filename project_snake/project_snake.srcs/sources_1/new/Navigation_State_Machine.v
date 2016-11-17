@@ -26,7 +26,8 @@ input BTNU,
 input BTNL,
 input BTNR,
 input BTND,
-output Direction_state
+input RESET,
+output [1:0] Direction_state
 
     );
     
