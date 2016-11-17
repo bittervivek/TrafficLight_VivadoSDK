@@ -22,19 +22,18 @@
 module Score_counter(
     input CLK,
     input RESET,
-    input ENABLE,
+    input REACHED_TARGET,
     output [3:0] SEG_SELECT,
-    output [7:0] DEC_OUT
+    output [7:0] DEC_OUT,
+    output [3:0] Score
     
     );
-wire Bit17TriggOut,Bit4TriggOut0,Bit4TriggOut1,Bit4TriggOut2,Bit4TriggOut3,Bit4TriggOut4;
+wire Bit17TriggOut,Bit4TriggOut0,Bit2TriggOut0;
 wire [3:0] DecCount1;
 wire [3:0] DecCount2;
-wire [3:0] DecCount3;
-wire [3:0] DecCount4;
 wire [1:0] StrobeCount;
     // The 17 bit counter
-    Generic_counter # (.COUNTER_WIDTH(17),
+  /*  Generic_counter # (.COUNTER_WIDTH(17),
                        .COUNTER_MAX(99999)
                        )
                        Bit17Counter(
@@ -42,7 +41,7 @@ wire [1:0] StrobeCount;
                        .RESET(1'b0),
                        .ENABLE_IN(1'b1),
                        .TRIG_OUT(Bit17TriggOut)                    
-                       );
+                       );*/
       // The 2 bit counter
      Generic_counter # (.COUNTER_WIDTH(2),
                         .COUNTER_MAX(3)
@@ -50,7 +49,8 @@ wire [1:0] StrobeCount;
                             Bit2Counter(
                             .CLK(CLK),
                             .RESET(1'b0),
-                            .ENABLE_IN(Bit17TriggOut),
+                            .ENABLE_IN(1'b1),
+                            .TRIG_OUT(Bit2TriggOut0),
                             .COUNT(StrobeCount)
                              );
     //Five 4_bit counter
@@ -60,20 +60,21 @@ wire [1:0] StrobeCount;
                            Bit4Counter0(
                            .CLK(CLK),
                            .RESET(RESET),
-                           .ENABLE_IN(Bit17TriggOut&&ENABLE),
-                           .TRIG_OUT(Bit4TriggOut0)
+                           .ENABLE_IN(REACHED_TARGET),
+                           .TRIG_OUT(Bit4TriggOut0),
+                           .COUNT(DecCount1)
                            );
                           
      
       Generic_counter # (.COUNTER_WIDTH(4),
-                         .COUNTER_MAX(9) )
+                         .COUNTER_MAX(1) )
                      Bit4Counter1(
                          .CLK(CLK),
                          .RESET(RESET),
                          .ENABLE_IN(Bit4TriggOut0),
                          .TRIG_OUT(Bit4TriggOut1),
-                          .COUNT(DecCount1));
-       Generic_counter # (.COUNTER_WIDTH(4),
+                         .COUNT(DecCount2));
+      /* Generic_counter # (.COUNTER_WIDTH(4),
                            .COUNTER_MAX(9)  )
                         Bit4Counter2(
                                .CLK(CLK),
@@ -96,7 +97,7 @@ wire [1:0] StrobeCount;
                 .RESET(RESET),
                 .ENABLE_IN(Bit4TriggOut3),
                 .TRIG_OUT(Bit4TriggOut4),
-                .COUNT(DecCount4));
+                .COUNT(DecCount4));*/
      
  wire [4:0] DecCountAndDOT1;
  wire [4:0] DecCountAndDOT2;
@@ -106,8 +107,9 @@ wire [1:0] StrobeCount;
  wire [4:0] MuxOut;
  assign DecCountAndDOT1={1'b0,DecCount1};
  assign DecCountAndDOT2={1'b0,DecCount2};
- assign DecCountAndDOT3={1'b1,DecCount3};
- assign DecCountAndDOT4={1'b0,DecCount4};
+ assign DecCountAndDOT3=5'b00000;
+ assign DecCountAndDOT4=5'b00000;
+ assign Score = DecCount2*10 + DecCount1;
  
  Multiplexer_4way Mux4(
              .CONTROL(StrobeCount),
