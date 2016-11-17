@@ -1,0 +1,500 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Fri Nov 18 06:57:51 2016
+# Process ID: 37216
+# Log file: D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.runs/synth_1/VGA_Wrapper.vds
+# Journal file: D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_Wrapper.tcl -notrace
+Command: synth_design -top VGA_Wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 264.762 ; gain = 70.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA_Wrapper' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/VGA_Wrapper.v:23]
+WARNING: [Synth 8-387] label required on module instance [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/VGA_Wrapper.v:49]
+INFO: [Synth 8-638] synthesizing module 'vga_control' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/vga_control.v:23]
+	Parameter HorzTimeToPulseWidthEnd bound to: 10'b0001100000 
+	Parameter HorzTimeToBackPorchEnd bound to: 10'b0010010000 
+	Parameter HorzTimeToDisplayTimeEnd bound to: 10'b1100010000 
+	Parameter HorzTimeToFrontPorchEnd bound to: 10'b1100100000 
+	Parameter VertTimeToPulseWidthEnd bound to: 10'b0000000010 
+	Parameter VertTimeToBackPorchEnd bound to: 10'b0000011111 
+	Parameter VertTimeToDisplayTimeEnd bound to: 10'b1000001001 
+	Parameter VertTimeToFrontPorchEnd bound to: 10'b1000001001 
+INFO: [Synth 8-638] synthesizing module 'Generic_counter' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_counter' (1#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+WARNING: [Synth 8-350] instance 'Slower' of module 'Generic_counter' requires 5 connections, but only 4 given [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/vga_control.v:62]
+INFO: [Synth 8-638] synthesizing module 'Generic_counter__parameterized0' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 799 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_counter__parameterized0' (1#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_counter__parameterized1' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 520 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_counter__parameterized1' (1#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_control' (2#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/vga_control.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_counter__parameterized2' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 21 - type: integer 
+	Parameter COUNTER_MAX bound to: 999999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_counter__parameterized2' (2#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+WARNING: [Synth 8-350] instance 'Slower_1' of module 'Generic_counter' requires 5 connections, but only 4 given [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/VGA_Wrapper.v:63]
+INFO: [Synth 8-638] synthesizing module 'Generic_counter__parameterized3' [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
+	Parameter COUNTER_MAX bound to: 99 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_counter__parameterized3' (2#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/Generic_counter.v:23]
+WARNING: [Synth 8-350] instance 'Slower_2' of module 'Generic_counter' requires 5 connections, but only 4 given [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/VGA_Wrapper.v:74]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Wrapper' (3#1) [D:/Design_Project/FromGit/VivadoSDK/project_snake/project_snake.srcs/sources_1/new/VGA_Wrapper.v:23]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[11]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[10]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[9]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[8]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[7]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[6]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[5]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[4]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[3]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[2]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[1]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 299.031 ; gain = 104.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 299.031 ; gain = 104.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 299.031 ; gain = 104.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "count_value" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5546] ROM "count_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count_value" won't be mapped to RAM because address size (21) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "count_value" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 316.398 ; gain = 122.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                32x32  Multipliers := 5     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA_Wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 5     
+Module Generic_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module Generic_counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_counter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Generic_counter__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_counter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 409.895 ; gain = 215.613
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Horizontal_Addr/count_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vertical_Addr/count_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count_value" won't be mapped to RAM because address size (21) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "count_value" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Colour3, operation Mode is: A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour3, operation Mode is: A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour3, operation Mode is: A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour3, operation Mode is: PCIN+A*B.
+DSP Report: operator Colour3 is absorbed into DSP Colour3.
+DSP Report: operator Colour4 is absorbed into DSP Colour3.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: Generating DSP Colour4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+DSP Report: operator Colour4 is absorbed into DSP Colour4.
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[11]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[10]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[9]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[8]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[7]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[6]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[5]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[4]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[3]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[2]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[1]
+WARNING: [Synth 8-3331] design VGA_Wrapper has unconnected port COLOUR_IN[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 412.207 ; gain = 217.926
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 412.207 ; gain = 217.926
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VGA_Wrapper | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 13     | 13     | 48     | 25     | 26     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 10     | 10     | 48     | 25     | 20     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | PCIN+A*B       | No           | 10     | 10     | 20     | 25     | 21     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|VGA_Wrapper | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 456.867 ; gain = 262.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   101|
+|3     |DSP48E1 |    18|
+|4     |LUT1    |   114|
+|5     |LUT2    |   193|
+|6     |LUT3    |    27|
+|7     |LUT4    |   133|
+|8     |LUT5    |    99|
+|9     |LUT6    |   125|
+|10    |FDRE    |   134|
+|11    |FDSE    |    12|
+|12    |IBUF    |     1|
+|13    |OBUF    |    14|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------------+------+
+|      |Instance            |Module                          |Cells |
++------+--------------------+--------------------------------+------+
+|1     |top                 |                                |   973|
+|2     |  Slower_1          |Generic_counter__parameterized2 |    53|
+|3     |  Slower_2          |Generic_counter__parameterized3 |    20|
+|4     |  nolabel_line49    |vga_control                     |   292|
+|5     |    Horizontal_Addr |Generic_counter__parameterized0 |    36|
+|6     |    Slower          |Generic_counter                 |     6|
+|7     |    Vertical_Addr   |Generic_counter__parameterized1 |    39|
++------+--------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 456.867 ; gain = 246.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 456.867 ; gain = 262.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Feature available: Internal_bitstream
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 520.555 ; gain = 309.820
+INFO: [Common 17-600] The following parameters have non-default value.
+synth.vivado.isSynthRun
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 520.555 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 18 06:58:19 2016...
