@@ -4,3 +4,5 @@
 /project_snake/project_snake.runs/*
 /project_snake/project_snake.sim/*
 /project_snake/project_snake.xpr
+!.gitignore
+!/project_snake/project_snake.srcs
