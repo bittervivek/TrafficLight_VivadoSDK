@@ -1,8 +1,10 @@
 #vivado
-/project_snake/project_snake.cache/*
-/project_snake/project_snake.hw/*
-/project_snake/project_snake.runs/*
-/project_snake/project_snake.sim/*
-/project_snake/project_snake.xpr
+/project_snake/Snack_Game.cache/*
+/project_snake/Snack_Game.hw/*
+/project_snake/Snack_Game.runs/*
+/project_snake/Snack_Game.sim/*
+/project_snake/Snack_Game.xpr
 !.gitignore
-!/project_snake/project_snake.srcs
+!/project_snake/Snack_Game.srcs/*
+/project_snake/*.log
+/project_snake/*.jou

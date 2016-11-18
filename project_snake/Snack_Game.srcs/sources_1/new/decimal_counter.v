@@ -48,7 +48,7 @@ wire [1:0] StrobeCount;
                             )
                             Bit2Counter(
                             .CLK(CLK),
-                            .RESET(1'b0),
+                            .RESET(RESET),
                             .ENABLE_IN(1'b1),
                             .TRIG_OUT(Bit2TriggOut0),
                             .COUNT(StrobeCount)
