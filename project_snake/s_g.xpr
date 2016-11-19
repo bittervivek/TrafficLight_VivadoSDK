@@ -3,28 +3,28 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/Administrator/Desktop/snake_game/snake_game.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/Administrator/Desktop/s_g/s_g.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="03c1b79302924734a6fbc36fd72a0d3e"/>
+    <Option Name="Id" Val="933f6c95b8b84ed9852eeb1b934503f5"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="C:/Users/Administrator/Desktop/s_g/s_g.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/snake_game.ip_user_files"/>
-    <Option Name="IPStaticSourceDir" Val="$PPRDIR/snake_game.ip_user_files/ipstatic"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/s_g.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/s_g.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="2"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -42,86 +42,71 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Generic_counter.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Generic_counter.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/vga_control.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Multiplexer_4way.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Multiplexer_4way.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/vga_control.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Decording_the_world.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Decording_the_world.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Target_Generator.v">
+      <File Path="$PPRDIR/../snake_game/snake_game.srcs/sources_1/new/snake_control.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/VGA_Wrapper.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Master_State_Machine.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/snake_control.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Target_Generator.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Navigation_State_Machine.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/Navigation_State_Machine.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/Master_State_Machine.v">
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/sources_1/new/decimal_counter.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/decimal_counter.v">
+      <File Path="$PPRDIR/../snake_game/snake_game.srcs/sources_1/new/Snake_Game_Wrapper.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/Snake_Game_Wrapper.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sources_1/new/PaxHeader/GENERIC.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -130,66 +115,25 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Snake_Game_Wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../在爱丁堡的日子/sg/Snack_Game/Snack_Game.srcs/constrs_1/new/Constraints_XDC.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
-      <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/SC_TB.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sim_1/new/Target_TB.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sim_1/new/MSM_TB.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sim_1/new/Score_TB.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sim_1/new/NSM_TB.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/snack game/Snack_Game/Snack_Game.srcs/sim_1/new/VGA_TB.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="SC_TB"/>
+        <Option Name="TopModule" Val="Snake_Game_Wrapper"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -225,14 +169,18 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
